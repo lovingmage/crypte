@@ -34,6 +34,7 @@ class TestClient(unittest.TestCase):
         x.insert(c) 
             
         encfilter = cte.filter(x, 2,3,4)
+        #encfilter = x.filter(2,3,4)
         encnt = encfilter.count()
         m = pro.lab_decrypt(prikey, encnt)
         
@@ -53,11 +54,11 @@ class TestClient(unittest.TestCase):
         x.insert(c) 
         x.insert(c) 
             
-        enc_project = x.project(1)
+        enc_project = cte.project(x,3)
         encnt = enc_project.count()
         m = pro.lab_decrypt(prikey, encnt)
         
-        g_truth = 3*(arr0[0] + arr0[1])
+        g_truth = 3*(arr0[-1] + arr0[-2])
         self.assertEqual(g_truth, m)
         
     def test_groupby(self):
