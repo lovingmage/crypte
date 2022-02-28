@@ -8,17 +8,12 @@ Created on Sun May 30 19:26:47 2021
 
 
 import unittest
-import numpy as np
-import random
 import resource
-import time
 import phe.paillier as paillier
-from dataclasses import dataclass
-import util
-import json
-import provision as pro
-from crypte import Cdata
-import crypte as cte
+import crypte.provision as pro
+import crypte.core as cte
+from crypte.core import Cdata
+
 
 class TestClient(unittest.TestCase):
     def test_filter(self):
@@ -77,6 +72,24 @@ class TestClient(unittest.TestCase):
         m = pro.lab_decrypt_vector(prikey, enc_gby)
         g_truth = [3*elem for elem in arr0[2:7]]
         self.assertEqual(g_truth, m)
+        
+    def test_cosprod(self):
+        x = Cdata(attr=[2,5,2])
+        r_init = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        pubkey, prikey = paillier.generate_paillier_keypair()
+        x.set_pk(pubkey)
+        arr0 = [1,2,3,7,5,6,7,8,9]
+        c = pro.lab_encrypt_vector(pubkey, arr0)
+            
+        x.insert(c) 
+        x.insert(c) 
+        x.insert(c) 
+            
+        cosproduct = cte.cosprod(x, 1, 2, pubkey)
+        m = pro.lab_mult_dec_vector(prikey, cosproduct.get_data()[0])
+        g_truth = [3, 7, 5, 6, 7, 6, 14, 10, 12, 14]
+        self.assertEqual(g_truth, m)
+
         
         
 if __name__ == '__main__':

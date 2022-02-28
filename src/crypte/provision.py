@@ -12,7 +12,6 @@ import resource
 import time
 import phe.paillier as paillier
 from dataclasses import dataclass
-import util
 import json
 import sys
 from multiprocessing import *
@@ -107,8 +106,25 @@ def lab_mult(pubkey, num1, num2):
     c3 = num1[1] * num2[0]
     return [c1+c2+c3, num1[1], num2[1]]
 
+def lab_mult_re(pubkey, mul_res, seed):
+    r = pubkey.encrypt(seed)
+    return [mul_res[0]+r, mul_res[1], mul_res[2]]
+
 
 def lab_mult_dec(prikey, num):
     b1 = prikey.decrypt(num[1])
     b2 = prikey.decrypt(num[2])
     return ( prikey.decrypt(num[0]) + b1*b2 )
+
+def lab_mult_dec_vector(prikey, x):
+    res = []
+    for num in x:
+        b1 = prikey.decrypt(num[1])
+        b2 = prikey.decrypt(num[2])
+        res.append(prikey.decrypt(num[0]) + b1*b2)
+    return res
+        
+    #return [lab_decrypt(prikey, elem) for elem in x]
+    #b1 = prikey.decrypt(num[1])
+    #b2 = prikey.decrypt(num[2])
+    #return ( prikey.decrypt(num[0]) + b1*b2 )

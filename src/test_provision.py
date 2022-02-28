@@ -9,13 +9,12 @@ Created on Tue May 18 18:43:25 2021
 
 import random
 import unittest
-import provision as pro
 import phe.paillier as paillier
 import resource
-import util
+import crypte.provision as pro
 import json
-import numpy as np
 import os
+from crypte import util
 
 class TestClient(unittest.TestCase):
     
@@ -110,6 +109,21 @@ class TestClient(unittest.TestCase):
         m = pro.lab_decrypt(prikey, sumc)
         self.assertEqual(summation, m)
         
+    def test_mult_re(self):
+        r_init = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        pubkey, prikey = paillier.generate_paillier_keypair()
+        a = 10
+        b = 15
+        seed = 7
+        num1 = pro.lab_encrypt(pubkey, a)
+        num2 = pro.lab_encrypt(pubkey, b)
+        c = pro.lab_mult(pubkey, num1, num2)
+        m = pro.lab_mult_dec(prikey, c)
+        
+        c_re = pro.lab_mult_re(pubkey, c, seed)
+        m_re = pro.lab_mult_dec(prikey, c_re)
+        self.assertEqual(m, m_re - seed)
+
         
     def test_serialize(self):
         r_init = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
