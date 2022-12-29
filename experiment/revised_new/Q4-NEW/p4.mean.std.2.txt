@@ -1,0 +1,19 @@
+['3', '1', '1']
+Phase 1 : Protocol Laplace-DO
+Phase 2 : Protocol Laplace-AS
+Runtime(KeyGen) =  0.06177091598510742
+Runtime(DO_ComputeEncX) =  1.503474791765213
+Runtime(AS_MergeEncX) =  0.0010399818420410156
+Runtime(AS_Projection_Filter) =  0.004209995269775391
+Runtime(gen_bit_table) =  0.0001087188720703125
+Runtime(As_CrossProduct2) =  3970.269317150116
+Runtime(As_ProjectionT) =  0.00039196014404296875
+Runtime(CSP_generate_labEncProduct22) =  2457.3707048892975
+Current Round is Size= 477
+AS_filter_GroupBy= 938.6525776863098
+AS_generateEncCount_GroupBy= 2.021248435974121
+AS_Laplace_vector= 0.9614982604980469
+Csp_Lap_mul_decrypt2= 270.294709944725
+ 
+The mean and std of running time: 
+2423.860068655014 46.25351472918614

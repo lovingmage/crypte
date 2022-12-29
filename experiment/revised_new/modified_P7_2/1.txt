@@ -1,0 +1,195 @@
+Attr_GB 1
+thresh 100
+flag 1
+Flag2 1
+e 0.1
+count_sym -
+ec 1
+Attr_Aggr []
+Aggr []
+e_Aggr []
+Phase 1 : Protocol GroupBy-DO
+Phase 2 : Protocol GroupBy-AS
+FilterQ *
+Generate Cipher
+Genrate Cipher S 1.4145839214324951
+Leb 100
+[119]
+Leb 100
+[94]
+Leb 100
+[104]
+Leb 100
+[97]
+Leb 100
+[74]
+Leb 100
+[105]
+Leb 100
+[103]
+Leb 100
+[95]
+Leb 100
+[91]
+Leb 100
+[103]
+NUMDO 1000
+As-As.projection 0.0004043102264404297
+As1-AS_generateEncCount_GroupBy 4.517374730110168
+As2-AS_lab_mask_GroupBy 0.9990703582763671
+As3-AS_rotate_GroupBy 0.016330265998840333
+As4-AS_threshold_GroupBY 4.021594309806824
+As5_AS_Laplace 0.009951138496398925
+Csp1-CSP_decryptOnly 0.29650685787200926
+Csp2_CSP_generateEncNoisyCoding 0.022144365310668945
+Csp3_CSP_Laplace 0.0028553247451782227
+Leb 100
+[75]
+Leb 100
+[84]
+Leb 100
+[82]
+Leb 100
+[118]
+Leb 100
+[100]
+Leb 100
+[97]
+Leb 100
+[119]
+Leb 100
+[65]
+Leb 100
+[89]
+Leb 100
+[103]
+NUMDO 2500
+As-As.projection 0.0009817838668823241
+As1-AS_generateEncCount_GroupBy 10.67612042427063
+As2-AS_lab_mask_GroupBy 0.9644606590270997
+As3-AS_rotate_GroupBy 0.03811676502227783
+As4-AS_threshold_GroupBY 10.267283272743224
+As5_AS_Laplace 0.009882593154907226
+Csp1-CSP_decryptOnly 0.2798896551132202
+Csp2_CSP_generateEncNoisyCoding 0.05087261199951172
+Csp3_CSP_Laplace 0.0028443098068237304
+Leb 100
+[128]
+Leb 100
+[90]
+Leb 100
+[85]
+Leb 100
+[79]
+Leb 100
+[106]
+Leb 100
+[132]
+Leb 100
+[97]
+Leb 100
+[65]
+Leb 100
+[69]
+Leb 100
+[132]
+NUMDO 5000
+As-As.projection 0.002044343948364258
+As1-AS_generateEncCount_GroupBy 22.38183960914612
+As2-AS_lab_mask_GroupBy 1.0044301748275757
+As3-AS_rotate_GroupBy 0.08081834316253662
+As4-AS_threshold_GroupBY 21.869218516349793
+As5_AS_Laplace 0.009947729110717774
+Csp1-CSP_decryptOnly 0.2912407159805298
+Csp2_CSP_generateEncNoisyCoding 0.10582935810089111
+Csp3_CSP_Laplace 0.0029083251953125
+Leb 100
+[113]
+Leb 100
+[75]
+Leb 100
+[113]
+Leb 100
+[96]
+Leb 100
+[103]
+Leb 100
+[106]
+Leb 100
+[83]
+Leb 100
+[106]
+Leb 100
+[75]
+Leb 100
+[127]
+NUMDO 10000
+As-As.projection 0.004010701179504394
+As1-AS_generateEncCount_GroupBy 45.24251160621643
+As2-AS_lab_mask_GroupBy 0.981920599937439
+As3-AS_rotate_GroupBy 0.1623465299606323
+As4-AS_threshold_GroupBY 44.996144556999205
+As5_AS_Laplace 0.009932255744934082
+Csp1-CSP_decryptOnly 0.2905524969100952
+Csp2_CSP_generateEncNoisyCoding 0.20704095363616942
+Csp3_CSP_Laplace 0.0028886318206787108
+Leb 100
+[87]
+Leb 100
+[89]
+Leb 100
+[106]
+Leb 100
+[93]
+Leb 100
+[75]
+Leb 100
+[101]
+Leb 100
+[82]
+Leb 100
+[65]
+Leb 100
+[136]
+Leb 100
+[91]
+NUMDO 20000
+As-As.projection 0.008105182647705078
+As1-AS_generateEncCount_GroupBy 92.99247550964355
+As2-AS_lab_mask_GroupBy 1.0356135845184327
+As3-AS_rotate_GroupBy 0.3395045757293701
+As4-AS_threshold_GroupBY 92.07824358940124
+As5_AS_Laplace 0.010800623893737793
+Csp1-CSP_decryptOnly 0.2970555543899536
+Csp2_CSP_generateEncNoisyCoding 0.4440448760986328
+Csp3_CSP_Laplace 0.003177833557128906
+Leb 100
+[109]
+Leb 100
+[122]
+Leb 100
+[92]
+Leb 100
+[107]
+Leb 100
+[91]
+Leb 100
+[95]
+Leb 100
+[175]
+Leb 100
+[102]
+Leb 100
+[107]
+Leb 100
+[97]
+NUMDO 32561
+As-As.projection 0.013413786888122559
+As1-AS_generateEncCount_GroupBy 145.2372477054596
+As2-AS_lab_mask_GroupBy 1.0127098321914674
+As3-AS_rotate_GroupBy 0.5229302883148194
+As4-AS_threshold_GroupBY 143.2021567106247
+As5_AS_Laplace 0.01037905216217041
+Csp1-CSP_decryptOnly 0.2904597043991089
+Csp2_CSP_generateEncNoisyCoding 0.6853049516677856
+Csp3_CSP_Laplace 0.0029328107833862306

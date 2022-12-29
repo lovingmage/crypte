@@ -1,0 +1,19 @@
+Attribute domain size = <2,100,20,15>
+
+Activity			Time(s)
+
+KeyGen				0.2
+DO_ComputeEncX(per DO)		2.8
+AS_Aggregate			<0.027,0.032,0.17> for #DO=<10,100,1000>
+CSP_Decrypt			0.0044	 
+
+
+Noise Max:
+
+# of range query: 10 
+
+Runtime(KeyGen) =  0.14536499977111816
+Runtime(DO_ComputeEncX) =  0.9889196157455444
+Runtime(AS_MergeEncX) =  1.71661376953125e-05
+Runtime(AS_Noise) =  0.10114264488220215
+Runtime(AS_CSP_SMC_Laplace) =  0.026241779327392578

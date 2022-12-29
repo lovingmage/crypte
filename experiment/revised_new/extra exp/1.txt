@@ -1,0 +1,78 @@
+Attr_GB 1
+thresh 100
+flag 1
+Flag2 1
+e 0.1
+count_sym -
+ec 1
+Attr_Aggr []
+Aggr []
+e_Aggr []
+Phase 1 : Protocol GroupBy-DO
+Length of 32561 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+NUM_DO 1000 4.304529738426209
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+NUM_DO 2500 10.595603275299073
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+NUM_DO 5000 17.07901542186737
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+NUM_DO 10000 41.78998293876648
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+NUM_DO 20000 83.3376844882965
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+Leb 100
+NUM_DO 32561 145.6395439863205

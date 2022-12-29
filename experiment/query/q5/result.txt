@@ -1,0 +1,24 @@
+['0', '1', '1']
+['3', '6', '6']
+['1', '30', '30']
+Phase 1 : Protocol Laplace-DO
+Phase 2 : Protocol Laplace-AS
+ 
+=========>
+['0', '1', '1']
+['3', '6', '6']
+['1', '30', '30']
+Phase 1 : Protocol Laplace-DO
+ 
+=========>
+['0', '1', '1']
+['3', '6', '6']
+['1', '30', '30']
+Phase 1 : Protocol Laplace-DO
+ 
+=========>
+['0', '1', '1']
+['3', '6', '6']
+['1', '30', '30']
+Phase 1 : Protocol Laplace-DO
+ 

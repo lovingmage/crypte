@@ -1,0 +1,43 @@
+['3', '1', '1']
+Phase 1 : Protocol Laplace-DO
+Phase 2 : Protocol Laplace-AS
+Runtime(KeyGen) =  0.10591506958007812
+Runtime(DO_ComputeEncX) =  1.4658476769924165
+Runtime(AS_MergeEncX) =  0.0008900165557861328
+Runtime(AS_Projection_Filter) =  0.0037348270416259766
+Runtime(gen_bit_table) =  0.00011301040649414062
+Runtime(As_CrossProduct2) =  3860.8394441604614
+Runtime(As_ProjectionT) =  0.0004658699035644531
+Runtime(CSP_generate_labEncProduct22) =  2465.9596972465515
+Current Round is Size= 25
+AS_filter_GroupBy= 96.59867312908173
+AS_generateEncCount_GroupBy= 0.1998952865600586
+AS_Laplace_vector= 1.9113280534744264
+Csp_Lap_mul_decrypt2= 28.46441674232483
+ 
+The mean and std of running time: 
+127.17431330680847 0.6497416492642242
+Current Round is Size= 59
+AS_filter_GroupBy= 227.23654382228852
+AS_generateEncCount_GroupBy= 0.4781999349594116
+AS_Laplace_vector= 1.9113811731338501
+Csp_Lap_mul_decrypt2= 66.27366247177125
+ 
+The mean and std of running time: 
+295.8997878789902 0.641596721805544
+Current Round is Size= 122
+AS_filter_GroupBy= 470.196826338768
+AS_generateEncCount_GroupBy= 1.0053033590316773
+AS_Laplace_vector= 1.916188406944275
+Csp_Lap_mul_decrypt2= 135.8896041870117
+ 
+The mean and std of running time: 
+609.0079224824906 1.0680162427989377
+Current Round is Size= 236
+AS_filter_GroupBy= 908.2730979442597
+AS_generateEncCount_GroupBy= 1.94554922580719
+AS_Laplace_vector= 1.9220280647277832
+Csp_Lap_mul_decrypt2= 262.35922667980196
+ 
+The mean and std of running time: 
+1174.4999021053313 0.9491272982394281
